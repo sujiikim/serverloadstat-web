@@ -1,0 +1,5 @@
+# One host per line.
+# Blank lines and comments are ignored.
+compute-a01
+compute-a02
+compute-b01

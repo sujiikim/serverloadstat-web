@@ -1,0 +1,129 @@
+{
+  "time": "2026-05-13 14:20:00",
+  "data": [
+    {
+      "host": "compute-a01",
+      "ok": true,
+      "cpu": 32,
+      "l1": 7.42,
+      "l5": 6.85,
+      "l15": 6.10,
+      "ratio": 0.23,
+      "cpu_util": 31.4,
+      "r_count": 4,
+      "d_count": 0,
+      "top_users": [
+        { "user": "user-01", "raw_cpu_percent": 441.5, "cpu_util_percent": 13.8 },
+        { "user": "user-02", "raw_cpu_percent": 239.2, "cpu_util_percent": 7.5 },
+        { "user": "root", "raw_cpu_percent": 97.5, "cpu_util_percent": 3.0 }
+      ],
+      "io_wait_users": []
+    },
+    {
+      "host": "compute-a02",
+      "ok": true,
+      "cpu": 48,
+      "l1": 39.20,
+      "l5": 28.80,
+      "l15": 24.41,
+      "ratio": 0.82,
+      "cpu_util": 76.2,
+      "r_count": 22,
+      "d_count": 3,
+      "top_users": [
+        { "user": "user-03", "raw_cpu_percent": 1240.8, "cpu_util_percent": 25.9 },
+        { "user": "user-04", "raw_cpu_percent": 914.2, "cpu_util_percent": 19.0 },
+        { "user": "user-05", "raw_cpu_percent": 366.1, "cpu_util_percent": 7.6 }
+      ],
+      "io_wait_users": [
+        { "user": "user-05", "d_count": 2 },
+        { "user": "user-06", "d_count": 1 }
+      ]
+    },
+    {
+      "host": "compute-b01",
+      "ok": true,
+      "cpu": 64,
+      "l1": 73.90,
+      "l5": 64.13,
+      "l15": 51.92,
+      "ratio": 1.15,
+      "cpu_util": 88.5,
+      "r_count": 41,
+      "d_count": 11,
+      "top_users": [
+        { "user": "user-07", "raw_cpu_percent": 1880.4, "cpu_util_percent": 29.4 },
+        { "user": "user-08", "raw_cpu_percent": 1642.3, "cpu_util_percent": 25.7 },
+        { "user": "user-09", "raw_cpu_percent": 704.0, "cpu_util_percent": 11.0 }
+      ],
+      "io_wait_users": [
+        { "user": "user-08", "d_count": 6 },
+        { "user": "user-09", "d_count": 3 },
+        { "user": "user-10", "d_count": 2 }
+      ]
+    },
+    {
+      "host": "compute-b02",
+      "ok": true,
+      "cpu": 32,
+      "l1": 3.84,
+      "l5": 4.21,
+      "l15": 4.78,
+      "ratio": 0.12,
+      "cpu_util": 18.6,
+      "r_count": 2,
+      "d_count": 0,
+      "top_users": [
+        { "user": "user-11", "raw_cpu_percent": 352.0, "cpu_util_percent": 11.0 },
+        { "user": "user-12", "raw_cpu_percent": 128.4, "cpu_util_percent": 4.0 },
+        { "user": "root", "raw_cpu_percent": 42.1, "cpu_util_percent": 1.3 }
+      ],
+      "io_wait_users": []
+    },
+    {
+      "host": "compute-c01",
+      "ok": true,
+      "cpu": 40,
+      "l1": 12.36,
+      "l5": 10.88,
+      "l15": 9.92,
+      "ratio": 0.31,
+      "cpu_util": 34.9,
+      "r_count": 6,
+      "d_count": 1,
+      "top_users": [
+        { "user": "user-13", "raw_cpu_percent": 612.8, "cpu_util_percent": 15.3 },
+        { "user": "user-14", "raw_cpu_percent": 344.0, "cpu_util_percent": 8.6 },
+        { "user": "root", "raw_cpu_percent": 91.2, "cpu_util_percent": 2.3 }
+      ],
+      "io_wait_users": [
+        { "user": "user-14", "d_count": 1 }
+      ]
+    },
+    {
+      "host": "compute-c02",
+      "ok": true,
+      "cpu": 24,
+      "l1": 14.64,
+      "l5": 13.18,
+      "l15": 11.87,
+      "ratio": 0.61,
+      "cpu_util": 49.7,
+      "r_count": 9,
+      "d_count": 2,
+      "top_users": [
+        { "user": "user-15", "raw_cpu_percent": 566.4, "cpu_util_percent": 23.6 },
+        { "user": "user-16", "raw_cpu_percent": 312.0, "cpu_util_percent": 13.0 },
+        { "user": "root", "raw_cpu_percent": 80.4, "cpu_util_percent": 3.4 }
+      ],
+      "io_wait_users": [
+        { "user": "user-16", "d_count": 2 }
+      ]
+    },
+    {
+      "host": "storage-edge01",
+      "ok": false,
+      "error": "timeout"
+    }
+  ]
+}

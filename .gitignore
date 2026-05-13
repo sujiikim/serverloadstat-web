@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+data/stat_data.json
+*.log
