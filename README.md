@@ -153,3 +153,7 @@ python3 collector.py --hosts-file hosts.txt --mask-users
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+## Acknowledgements
+
+This project was built with help from OpenAI Codex.
