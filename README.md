@@ -8,21 +8,6 @@ It is intentionally small: no database, no frontend build step, no Python packag
 
 ![serverloadstat-web sample dashboard](sample_screenshot.png)
 
-## Reading the Dashboard
-
-- `Load/CPU`: 1-minute load average divided by CPU count
-- `R`: processes currently runnable or waiting for CPU
-- `D`: processes in uninterruptible sleep, usually disk or I/O wait
-- `CPU Util`: summed process CPU usage divided by CPU count
-- `Top CPU Users`: users above 10% CPU utilization
-
-Default status thresholds:
-
-- `OK`: Load/CPU <= 0.8
-- `WARN`: Load/CPU > 0.8
-- `HIGH`: Load/CPU > 1.0
-- `DOWN`: SSH command failed or timed out
-
 ## Features
 
 - Shows each host's CPU count, 1m/5m load average, and Load/CPU ratio
@@ -32,9 +17,7 @@ Default status thresholds:
 - Can anonymize usernames with `--mask-users`
 - Uses only the Python standard library
 
-## Quick Start
-
-### Preview with sample data
+## Preview with sample data
 
 ```bash
 cd serverloadstat-web
@@ -49,9 +32,7 @@ Open:
 http://localhost:4000
 ```
 
-## Usage
-
-### Monitor your own servers
+## Usage: Monitor your own servers
 
 Create a host list:
 
@@ -88,6 +69,21 @@ pkill -f web_dashboard.py
 nohup python3 collector.py --hosts-file hosts.txt > /tmp/serverloadstat-collector.log 2>&1 &
 nohup python3 web_dashboard.py --port 4000 > /tmp/serverloadstat-web.log 2>&1 &
 ```
+
+## Reading the Dashboard
+
+- `Load/CPU`: 1-minute load average divided by CPU count
+- `R`: processes currently runnable or waiting for CPU
+- `D`: processes in uninterruptible sleep, usually disk or I/O wait
+- `CPU Util`: summed process CPU usage divided by CPU count
+- `Top CPU Users`: users above 10% CPU utilization
+
+Default status thresholds:
+
+- `OK`: Load/CPU <= 0.8
+- `WARN`: Load/CPU > 0.8
+- `HIGH`: Load/CPU > 1.0
+- `DOWN`: SSH command failed or timed out
 
 ## Files
 
