@@ -4,8 +4,6 @@ A lightweight web dashboard for monitoring Linux server load across multiple hos
 
 `serverloadstat-web` polls your servers over SSH, collects load average and process CPU usage, and serves a simple auto-refreshing dashboard.
 
-It is intentionally small: no database, no frontend build step, no Python package install required.
-
 ![serverloadstat-web sample dashboard](sample_screenshot.png)
 
 ## Features
